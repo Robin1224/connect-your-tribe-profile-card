@@ -1,8 +1,52 @@
 <%- include('./partials/head') %>
 
-<article>
-  <h1>Hallo wereld!</h1>
-  <p>Alles werk! Laat dit visitekaartje in je browser aan een docent zien :D</p>
-</article>
+    <div class="aspect-ratio-container">
+      <div class="container">
+        <div class="desktop-icon" id="my-computer">
+          <img src="./assets/icons/My Computer.png" alt="My Computer" />
+          <p>My Computer</p>
+        </div>
+
+        <div class="window">
+          <div class="window-titlebar">
+            <img src="./assets/icons/ieSMALL.png" />
+            <p class="window-title">Visitekaartje</p>
+          </div>
+          <div class="window-content">
+            <img src="./assets/selfie1.png" alt="Selfie" />
+            <p class="window-content-text">
+              mijn naam is robin (hij/hem) ik ben 21 jaar oud en woon helaas nog
+              in emmeloord. heb veel passie voor design en creativiteit in t
+              algemeen. In m'n vrije tijd game ik ook wel eens, en probeer ik zo
+              veel mogelijk mijn vrienden te zien. ik heb al enigzins ervaring
+              met html, css en javascript omdat ik wel eens een cursus React heb
+              gevolgd, maar ik zou mezelf zeker geen expert noemen. daarnaast
+              vind ik t ook leuk om gewoon fashionable te kleden, en ben ik ook
+              erg voor het tegengaan van gendernormen, onder andere wat kleding
+              betreft. ook vind ik alles wat retro is interessant, en heb ik
+              zelf onder anderen ook een platenspeler/collectie, polaroid camera
+              en een oude film camera die ik graag gebruik
+            </p>
+          </div>
+        </div>
+
+        <footer class="taskbar">
+          <div class="start-button">
+            <img id="start-img" src="./assets/icons/Start.png" alt="Start" />
+            <p class="start-button-label">Start</p>
+          </div>
+          <div class="window-in-taskbar">
+            <img src="./assets/icons/ieSMALL.png" />
+            <p>Visitekaartje</p>
+          </div>
+
+          <div class="clock">
+            <img src="./assets/icons/Volume Clock.png" alt="Volume" />
+
+            <span class="clock-time" id="clock-time"></span>
+          </div>
+        </footer>
+      </div>
+    </div>
 
 <%- include('./partials/foot') %>
