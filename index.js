@@ -1,8 +1,9 @@
 // Importeer express uit de node_modules map
-import express from 'express'
+import express, { application } from 'express'
 
 // Maak een nieuwe express app aan
 const app = express()
+const data = await fetch('https://whois.fdnd.nl/api/v1/member/robin-heijden').then(res => res.json());
 
 // Stel ejs in als template engine en geef de 'views' map door
 app.set('view engine', 'ejs')
@@ -14,7 +15,7 @@ app.use(express.static('public'))
 // Maak een route voor de index
 app.get('/', function (req, res) {
   // res.send('Hello World!')
-  res.render('index')
+  res.render('index', data)
 })
 
 // Stel het poortnummer in waar express op gaat luisteren

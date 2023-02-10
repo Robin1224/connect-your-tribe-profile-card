@@ -9,23 +9,13 @@
 
         <div class="window">
           <div class="window-titlebar">
-            <img src="./assets/icons/ieSMALL.png" />
+            <img src="<%= member.avatar %>" />
             <p class="window-title">Visitekaartje</p>
           </div>
           <div class="window-content">
             <img src="./assets/selfie1.png" alt="Selfie" />
             <p class="window-content-text">
-              mijn naam is robin (hij/hem) ik ben 21 jaar oud en woon helaas nog
-              in emmeloord. heb veel passie voor design en creativiteit in t
-              algemeen. In m'n vrije tijd game ik ook wel eens, en probeer ik zo
-              veel mogelijk mijn vrienden te zien. ik heb al enigzins ervaring
-              met html, css en javascript omdat ik wel eens een cursus React heb
-              gevolgd, maar ik zou mezelf zeker geen expert noemen. daarnaast
-              vind ik t ook leuk om gewoon fashionable te kleden, en ben ik ook
-              erg voor het tegengaan van gendernormen, onder andere wat kleding
-              betreft. ook vind ik alles wat retro is interessant, en heb ik
-              zelf onder anderen ook een platenspeler/collectie, polaroid camera
-              en een oude film camera die ik graag gebruik
+              <%= member.bio.html %>
             </p>
           </div>
         </div>
