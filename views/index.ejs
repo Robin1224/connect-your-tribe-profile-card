@@ -1,42 +1,5 @@
 <%- include('./partials/head') %>
 
-    <div class="aspect-ratio-container">
-      <div class="container">
-        <div class="desktop-icon" id="my-computer">
-          <img src="./assets/icons/My Computer.png" alt="My Computer" />
-          <p>My Computer</p>
-        </div>
-
-        <div class="window">
-          <div class="window-titlebar">
-            <img src="./assets/icons/ieSMALL.png" />
-            <p class="window-title">Visitekaartje</p>
-          </div>
-          <div class="window-content">
-            <img src="<%= member.avatar %>" alt="Selfie" />
-            <p class="window-content-text">
-              <%= member.bio.html %>
-            </p>
-          </div>
-        </div>
-
-        <footer class="taskbar">
-          <div class="start-button">
-            <img id="start-img" src="./assets/icons/Start.png" alt="Start" />
-            <p class="start-button-label">Start</p>
-          </div>
-          <div class="window-in-taskbar">
-            <img src="./assets/icons/ieSMALL.png" />
-            <p>Visitekaartje</p>
-          </div>
-
-          <div class="clock">
-            <img src="./assets/icons/Volume Clock.png" alt="Volume" />
-
-            <span class="clock-time" id="clock-time"></span>
-          </div>
-        </footer>
-      </div>
-    </div>
+    
 
 <%- include('./partials/foot') %>
