@@ -14,7 +14,6 @@ app.use(express.static('public'))
 
 // Maak een route voor de index
 app.get('/', function (req, res) {
-  // res.send('Hello World!')
   res.render('index', data)
 })
 
